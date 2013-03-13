@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="goseed">
+<head>
+  <meta charset="utf-8">
+  <title>{{.}}</title>
+  <link rel="stylesheet" href="app/css/app.css"/>
+  <link rel="stylesheet" href="app/lib/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" href="app/lib/angular-ui/angular-ui.css" />
+  <link rel="stylesheet" href="app/lib/font-awesome/css/font-awesome.css" />
+</head>
+<body>
+  <header>
+    <ul class="menu">
+      <li><a href="#/view1">view1</a></li>
+      <li><a href="#/view2">view2</a></li>
+      <li><a href="#/">Home</a></li>
+    </ul>
+  </header>
+  <div ng-view>
+  </div>
+
+  <div>
+    {{.}} app: v<span app-version></span>
+  </div>
+  <script src="app/lib/angular/angular.js"></script>
+  <script src="app/lib/angular-ui/angular-ui.js"></script>
+  <script src="app/js/app.js"></script>
+  <script src="app/js/services.js"></script>
+  <script src="app/js/controllers.js"></script>
+  <script src="app/js/filters.js"></script>
+  <script src="app/js/directives.js"></script>
+  <script src="app/lib/angular-ui/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+
+  <footer>
+    Footer for your feet.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+application: goseed
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+- url: /app
+  static_dir: app
+- url: /.*
+  script: _go_app
