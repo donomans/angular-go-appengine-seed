@@ -10,17 +10,28 @@
 </head>
 <body>
   <header>
-    <ul class="menu">
-      <li><a href="#/view1">view1</a></li>
-      <li><a href="#/view2">view2</a></li>
-      <li><a href="#/">Home</a></li>
-    </ul>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#">{{.}}</a>
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          <li><a href="#">Home</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="#/view1">View1</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="#/view2">View2</a></li>
+        </ul>
+        <form class="navbar-search pull-right">
+          <span class="add-on"><i class="icon-search"></i></span>
+          <input type="text" class="search-query" placeholder="Search">
+        </form>
+      </div>
+    </div>
   </header>
-  <div ng-view>
-  </div>
-
-  <div>
-    {{.}} app: v<span app-version></span>
+  <div class="container">
+    <div ng-view class="row">
+      This is sort of empty...
+    </div>
   </div>
   <script src="app/lib/angular/angular.js"></script>
   <script src="app/lib/angular-ui/angular-ui.js"></script>
@@ -32,7 +43,19 @@
   <script src="app/lib/angular-ui/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
 
   <footer>
-    Footer for your feet.
+    <div class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <a class="brand">Footer for your feet.</a>
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          <li><a href="#/aboutus">About</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="#/legal">Legal Excuses</a></li>
+          <li class="divider-vertical"></li>
+        </ul>
+        <a class="brand">{{.}} app: v<span app-version></span></a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

@@ -2,11 +2,10 @@
 
 /* Controllers */
 
-
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
+function Legal(){
+	//presumably you could do incredible things here, like load your data.
 }
-MyCtrl2.$inject = [];
+Legal.$inject = [];
+
+function AboutUs(){}
+AboutUs.$inject = [];
