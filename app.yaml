@@ -4,6 +4,12 @@ runtime: go
 api_version: go1
 
 handlers:
+- url: /robots.txt
+  static_files: robots.txt
+  upload: noop
+- url: /sitemap.xml
+  static_files: sitemap.xml
+  upload: noop
 - url: /app
   static_dir: app
 - url: /.*
